@@ -1,0 +1,18 @@
+//圓角
+.border-4{
+    border-radius: 16px;
+}
+.object-fit{
+    object-fit:cover
+}
+.me-30{
+    margin-right: 30px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.text-lg-start{
+    @include mobile(){
+        text-align: start;
+    }
+}

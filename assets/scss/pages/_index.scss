@@ -1,3 +1,23 @@
-.index-title {
-  font-size: 100px;
+.banner-img{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-yoga/header.jpeg?raw=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 582px;
+  width: 100%;
+ 
+};
+.sticky-icon{
+  position:fixed;
+  top:50%;
+  right:30px;
+  width: 50px;
+  height: 100px;
+
+}
+.swiper-button-next,.swiper-button-prev{
+  color: $primary;
+  position: absolute;
+  
+
 }

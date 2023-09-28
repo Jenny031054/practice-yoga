@@ -298,14 +298,16 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
+$primary:       #907A7B !default;
+$secondary:     #F5F0E7 !default;
+$success:       #C0A4A5 !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$gary:          #707070!default;
+$white:         #fff!default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -317,7 +319,10 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "gray":       $gary,
+  "white":      $white,
+
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -374,11 +379,15 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,//4
+  2: $spacer * .5,//8
+  3: $spacer,//16
+  4: $spacer * 1.25,//20
+  5: $spacer * 1.5,//24
+  6: $spacer * 2,//32
+  7: $spacer * 2.5,//40
+  8: $spacer * 3,//48
+  9: $spacer * 4,//64
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -399,7 +408,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                #707070 !default;
 $body-text-align:           null !default;
 
 // Links
@@ -407,7 +416,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -483,7 +492,8 @@ $border-widths: (
   2: 2px,
   3: 3px,
   4: 4px,
-  5: 5px
+  5: 5px,
+  
 ) !default;
 
 $border-style:                solid !default;
@@ -540,7 +550,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Noto Sans TC", "sans-serif", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -566,12 +576,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.25 !default;//36
+$h2-font-size:                $font-size-base * 2 !default;//32
+$h3-font-size:                $font-size-base * 1.75 !default;//28
+$h4-font-size:                $font-size-base * 1.5 !default;//24
+$h5-font-size:                $font-size-base * 1.25 !default;//20
+$h6-font-size:                $font-size-base !default;//16
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -590,7 +600,7 @@ $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.5 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 
