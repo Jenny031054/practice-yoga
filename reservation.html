@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <script type="module" crossorigin src="/practice-yoga/assets/main-85c0ffc6.js"></script>
+    <link rel="stylesheet" href="/practice-yoga/assets/main-a5f7c000.css">
+  </head>
+  <body>
+    <nav class="bg-secondary py-5">
+    <div class="container  d-flex justify-content-between align-items-center">
+        <div class="navbar-brand">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-yoga/logo.png?raw=true" alt="logo">
+        </div>
+        <div class="navbar-nav">
+            <div class="navbar-link">
+                <a href="#" class="me-6 text-gray">課程介紹</a>
+                <a href="#" class="me-6 text-gray">瑜珈空間</a>
+                <a href="#" class="me-6 text-gray">當月課表</a>
+            </div>
+        </div>
+        <div class="d-flex">
+            <a href="reservation.html" class="btn btn-outline-primary me-3">立即預約</a>
+            <a href="#" class="btn btn-outline-primary">聯絡我們</a>
+        </div>
+    </div>
+</nav>    <div class="container my-9">
+      <div class="row  justify-content-center">
+        <div class="col-8 col-md-6 d-flex flex-column align-items-center">
+          <h1 class=" mb-3">立即預約</h1>
+          <div class="d-flex mb-6">
+            <p class="btn btn-secondary text-primary px-8 py-3 me-5 border rounded-4">選擇方案</p>
+            <p class="btn btn-primary text-white px-8 py-3 me-5 border rounded-4">填寫資料</p>
+            <p class="btn btn-secondary text-primary px-8 py-3 me-5 border rounded-4">完成預約</p>
+          </div>
+          <p>您選擇的是<span class="fs-5 text-success ms-3">首次體驗課程-基礎</span></p>
+        </div>
+      </div>
+      <div class="row justify-content-center  mt-7">
+        <div class="col-8 col-md-4 d-flex flex-column">
+          <form class="row" action="">
+            <div class="col-12">
+              <p class="mb-3">1. 是否接觸過瑜珈?</p>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="exposedYoga1" name="exposedYoga">
+                <label for="exposedYoga1" class="form-check-label">是</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="exposedYoga2" name="exposedYoga">
+                <label for="exposedYoga2" class="form-check-label">否</label>
+              </div>
+            </div>
+            <div class="col-12 mt-6">
+              <p class="mb-3">2. 想改善的生活問題?</p>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="improveLife1" name="improveLife">
+                <label for="improveLife1" class="form-check-label">肌耐力不足</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="improveLife2" name="improveLife">
+                <label for="improveLife2" class="form-check-label">柔軟度不佳</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="improveLife3" name="improveLife">
+                <label for="improveLife3" class="form-check-label">壓力大</label>
+              </div>
+              <br>
+              <div class="form-check form-check-inline mt-3">
+                <input type="checkbox" class="form-check-input" id="improveLife4" name="improveLife">
+                <label for="improveLife4" class="form-check-label">姿勢不正</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="improveLife5" name="improveLife">
+                <label for="improveLife5" class="form-check-label">睡眠品質差</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="improveLife6" name="improveLife">
+                <label for="improveLife6" class="form-check-label">注意力不足</label>
+              </div>
+            </div>
+            <div class="col-12 mt-6">
+              <p class="mb-3">3. 每週累積運動量約為多少？</p>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="doExcercise" id="excercise1">
+                <label for="excercise1" class="form-check-label">150 分鐘以上</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="doExcercise" id="excercise2">
+                <label for="excercise2" class="form-check-label">75~150 分鐘</label>
+              </div>
+              <br>
+              <div class="form-check form-check-inline mt-3">
+                <input type="radio" class="form-check-input" name="doExcercise" id="excercise3">
+                <label for="excercise3" class="form-check-label">30~75 分鐘</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="doExcercise" id="excercise4">
+                <label for="excercise4" class="form-check-label">30分鐘以下</label>
+              </div>
+            </div>
+            <div class="col-12 mt-6">
+                <p class="mb-3">4. 上課預約報到日</p>
+                <p class="form-text">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
+              <!--選擇日期套件-->
+            </div>
+            <div class="col-12 mt-6">
+              <p class="mb-3">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="name" class="form-label text-primary">姓名</label>
+                  <input type="text" class="form-control text-success border border-success " id="name" placeholder="請輸入您的姓名">
+                </div>
+                <div class="col-md-6">
+                  <label for="age" class="form-label text-primary">年齡</label>
+                  <input type="text" class="form-control text-success border border-success" id="age" placeholder="請輸入您的年齡">
+                </div>
+              
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-3 mt-3">
+                  <p class="mb-3 text-primary">性別</p>
+                  <select name="gender" id="gender" class="form-select">
+                    <option value="female">女</option>
+                    <option value="male">男</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12">
+                  <label for="email" class="form-label text-primary mb-3">電子信箱</label>
+                  <br>
+                  <input type="email" class="form-control  text-success border border-success" id="email" placeholder="email@example.com">
+                </div>
+                <div class="col-12 mt-3">
+                  <label for="phonenumber" class="form-label text-primary mb-3">手機號碼</label>
+                  <br>
+                  <input type="tel" class="form-control  text-success border border-success" id="phonenumber" placeholder="0912-345-678">
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="bg-primary border border-white">
+    <div class="container py-7">
+        <div class="d-flex justify-content-between">
+            <h3 class="text-white">現在訂閱，獲得課程優惠碼！</h3>
+            <div class="col-4">
+                <div class="input-group">
+                    <input class="form-control" type="email" placeholder="輸入您的電子信箱">
+                    <button class="btn btn-success text-white py-2 px-3">訂閱</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-primary py-6">
+    <div class="container">
+        <div class="d-flex mb-2">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-yoga/logo-white.png?raw=true" alt="logo-white" class="img-fluid" width="96px">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="" class="">
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex align-items-end">
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white fw-normal mb-2">課程介紹</a></li>
+                <li><a href="#" class="text-white fw-normal mb-2">瑜珈空間</a></li>
+                <li><a href="#" class="text-white fw-normal mb-2">當月課表</a></li>
+            </ul>
+            <p class="text-white mx-auto">© 2021. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/89099297a1.js" crossorigin="anonymous"></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    var commentSwiper = new Swiper(".commentSwiper", {
+      navigation: {
+      
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+  AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
+  </body>
+</html>
