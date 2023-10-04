@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Choose</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+<div class="container  my-9">
+  <div class="row  justify-content-center mb-5">
+    <div class="col-8 col-md-6 d-flex flex-column align-items-center">
+      <h1 class="mb-3">立即預約</h1>
+      <div class="d-flex mb-6">
+        <p class="btn btn-secondary text-primary px-8 py-3 me-5 border rounded-4">選擇方案</p>
+        <p class="btn btn-primary text-white px-8 py-3 me-5 border rounded-4">填寫資料</p>
+        <p class="btn btn-secondary text-primary px-8 py-3 me-5 border rounded-4">完成預約</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <section>
+    <div class="container py-7">
+      <h3 class="fw-bold text-primary text-center mb-1" data-aos="fade-up">方案選擇</h3>
+      <h5 class="text-success text-center mb-6" data-aos="fade-up">DOYOGA 可以帶給你...</h5>
+      <div class="row row-cols-1 row-cols-md-3 ">
+       
+            <div class="col mb-3" data-aos="zoom-in">
+            <div class="card border border-success rounded-4">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-yoga/yoga-11.jpg?raw=true" alt="yoga-11" class="card-img-top object-fit rounded-4" width="350px" height="250px">
+                <div class="card-body text-center mt-3">
+                <h5 class="mb-1">首次體驗</h5>
+                <p class="text-success mb-2">NT $450 / 次</p>
+                <p class="text-primary text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-4">
+                <a href="#classChooseOne" class="btn btn-success py-2 text-white w-100" data-bs-toggle="collapse" role="button" >選擇課程</a>
+                </div>
+            </div>
+            </div>
+            <div class="col mb-3" data-aos="zoom-in">
+            <div class="card border border-success rounded-4">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-yoga/yoga-12.jpg?raw=true" alt="yoga-12" class="card-img-top object-fit rounded-4" width="350px" height="250px">
+                <div class="card-body text-center mt-3">
+                <h5 class="mb-1">首次體驗</h5>
+                <p class="text-success mb-2">NT $450 / 次</p>
+                <p class="text-primary text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-4">
+                <a href="reservation-choose.html" class="btn btn-success py-2 text-white w-100">選擇課程</a>
+                </div>
+            </div>
+            </div>
+            <div class="col mb-3" data-aos="zoom-in">
+            <div class="card border border-success rounded-4">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-yoga/yoga-13.jpg?raw=true" alt="yoga-13" class="card-img-top object-fit rounded-4" width="350px" height="250px">
+                <div class="card-body text-center mt-3">
+                <h5 class="mb-1">首次體驗</h5>
+                <p class="text-success mb-2">NT $450 / 次</p>
+                <p class="text-primary text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 p-4">
+                <a href="reservation-choose.html" class="btn btn-success py-2 text-white w-100">選擇課程</a>
+                </div>
+            </div>
+            </div>
+      </div>
+    </div>
+      <!--collapse摺疊方案-->
+<div class="bg-primary ">
+<div class="container">
+<div class="row  justify-content-center">
+    <div class="col-12">
+        <div id="classChooseOne" class="collapse" aria-labelledby="headingOne">
+            <div class="py-7">
+            <h3 class="text-white text-center">選擇課程階級</h3>
+            <div class="row">
+                <div class="col-10 col-lg-4">
+                    <button class="btn btn-success text-white p-5 d-flex justify-content-between align-items-center ">
+                        <span class="fs-3 fw-bold">基礎Basic</span>
+                        <span class=" material-symbols-outlined material-symbols-outlined-unfill text-white fs-1">
+                            check_circle
+                        </span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+   
+  </section>
+
+  <h5 class="text-center text-primary">
+    <span class=" material-symbols-outlined material-symbols-outlined-unfill text-success fs-1">
+      check_circle
+      </span>
+      <br>
+    已完成預約，以下是您的預約資訊:
+  </h5>
+
+
+
+
+
+
+
+
+    <%- include('./layout/footer'); -%>
+
+   
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/89099297a1.js" crossorigin="anonymous"></script>
+    <script>
+      AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
+    
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 800, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    
+    });
+      </script>
+      </body>
+    </html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+<div class="container my-9">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h1 class="text-primary text-center mb-6">本月課表</h1>
+      <div class="bg-success border border-success rounded-4  p-8">
+        <table class="table table-bordered bg-white text-primary text-center">
+          <h5 class="fs-5 fw-bold text-white">2021 07 月</h5>
+          <thead>
+            <th scope="col">時間</th>
+            <th scope="col">星期一</th>
+            <th scope="col" class="table-secondary text-primary">星期二</th>
+            <th scope="col">星期三</th>
+            <th scope="col" class="table-secondary text-primary">星期四</th>
+            <th scope="col">星期五</th>
+            <th scope="col" class="table-secondary text-primary">星期六</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="col">0900-1000</th>
+              <td>基礎 Basic</td>
+              <td class="table-secondary text-primary">基礎 Basic</td>
+              <td></td>
+              <td class="table-secondary text-primary"></td>
+              <td></td>
+              <td class="table-secondary text-primary">基礎 Basic</td>
+            </tr>
+            <tr>
+              <th scope="col">1000-1100</th>
+              <td>艾揚格 Iyengar</td>
+              <td class="table-secondary text-primary">哈達 Hatha</td>
+              <td>寰宇 Universal</td>
+              <td class="table-secondary text-primary">哈達 Hatha</td>
+              <td>艾揚格 Iyengar</td>
+              <td class="table-secondary text-primary">雙人飛行</td>
+            </tr>
+            <tr>
+              <th scope="col">1100-1200</th>
+              <td>艾揚格 Iyengar</td>
+              <td class="table-secondary text-primary">哈達 Hatha</td>
+              <td>寰宇 Universal</td>
+              <td class="table-secondary text-primary">哈達 Hatha</td>
+              <td>艾揚格 Iyengar</td>
+              <td class="table-secondary text-primary">雙人飛行</td>
+            </tr>
+            <!--rest time-->
+            <tr>
+              <th scope="col">1200-1400</th>
+              <td colspan="6">休息</td>
+            </tr>
+            <tr>
+              <th scope="col">1400-1500</th>
+              <td>雙人飛行</td>
+              <td class="table-secondary text-primary">基礎 Basic</td>
+              <td>雙人飛行</td>
+              <td class="table-secondary text-primary">艾揚格 Iyengar</td>
+              <td>雙人飛行</td>
+              <td class="table-secondary text-primary">基礎 Basic</td>
+            </tr>
+            <tr>
+              <th scope="col">1500-1600</th>
+              <td>陰陽 Yin Yang</td>
+              <td class="table-secondary text-primary">陰陽 Yin Yang</td>
+              <td>基礎 Basic</td>
+              <td class="table-secondary text-primary">基礎 Basic</td>
+              <td>哈達 Hatha</td>
+              <td class="table-secondary text-primary">香氛瑜珈</td>
+            </tr>
+            <tr>
+              <th scope="col">1600-1700</th>
+              <td>哈達 Hatha</td>
+              <td class="table-secondary text-primary">雙人飛行</td>
+              <td>陰陽 Yin Yang</td>
+              <td class="table-secondary text-primary">香氛瑜珈</td>
+              <td>艾揚格 Iyengar</td>
+              <td class="table-secondary text-primary">陰陽 Yin Yang</td>
+            </tr>
+            <tr>
+              <th scope="col">1700-1800</th>
+              <td>陰陽 Yin Yang</td>
+              <td class="table-secondary text-primary"></td>
+              <td>基礎 Basic</td>
+              <td class="table-secondary text-primary">基礎 Basic</td>
+              <td>哈達 Hatha</td>
+              <td class="table-secondary text-primary">香氛瑜珈</td>
+            </tr>
+            <tr>
+              <th scope="col">1600-1700</th>
+              <td>哈達 Hatha</td>
+              <td class="table-secondary text-primary">雙人飛行</td>
+              <td>陰陽 Yin Yang</td>
+              <td class="table-secondary text-primary">香氛瑜珈</td>
+              <td>艾揚格 Iyengar</td>
+              <td class="table-secondary text-primary">陰陽 Yin Yang</td>
+            </tr>
+             <!--rest time-->
+             <tr>
+              <th scope="col">1800-2000</th>
+              <td colspan="6">休息</td>
+            </tr>
+            <tr>
+              <th scope="col">2000-2100</th>
+              <td>哈達 Hatha</td>
+              <td class="table-secondary text-primary">雙人飛行</td>
+              <td>陰陽 Yin Yang</td>
+              <td class="table-secondary text-primary">香氛瑜珈</td>
+              <td>艾揚格 Iyengar</td>
+              <td class="table-secondary text-primary">陰陽 Yin Yang</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <%- include('./layout/footer'); -%>
+
+   
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/89099297a1.js" crossorigin="anonymous"></script>
+    <script>
+      AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
+    
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 800, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    
+    });
+      </script>
+      </body>
+    </html>
+    
