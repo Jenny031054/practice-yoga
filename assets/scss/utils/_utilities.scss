@@ -21,3 +21,19 @@
         padding: 12px 20px;
     }
 }
+.hover-border-primary :hover{
+    border: 3px solid;
+    border-color: #907A7B;
+}
+.hover-bg-primary {
+    &:hover{
+        background-color: #907A7B;
+    }
+   
+}
+.btn.checkbox-hover{
+    opacity: 0.8;
+    &:hover{
+        opacity: 1;
+    }
+}
